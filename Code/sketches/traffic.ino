@@ -12,6 +12,7 @@ const int lightFourPinOne = 4;
 const int lightFourPinTwo = 3;
 const int lightFourPinThree = 2;
 int photoresistorVal = 0;
+
 void setup() {
   pinMode(13, OUTPUT);
   pinMode(12, OUTPUT);
@@ -26,6 +27,7 @@ void setup() {
   pinMode(3, OUTPUT);
   pinMode(2, OUTPUT);
   pinMode(1, OUTPUT);
+  
   // Disable all LED's
   digitalWrite(lightOnePinOne, LOW);
   digitalWrite(lightOnePinTwo, LOW);
@@ -102,8 +104,38 @@ digitalWrite(lightFourPinTwo, LOW);
 digitalWrite(lightThreePinThree, HIGH);
 digitalWrite(lightFourPinThree, HIGH);
 delay(1500);
-
 }
 
+void green () {
+  //set the LED pins to values that make green
+  analogWrite(RedPin, 0);
+  analogWrite(GreenPin, 100);
+  analogWrite(BluePin, 0);
+}
 
+void yellow () {
+  //set the LED pins to values that make yellow
+  analogWrite(RedPin, 100);
+  analogWrite(GreenPin, 100);
+  analogWrite(BluePin, 0);
+}
 
+void red () {
+  //set the LED pins to values that make red
+  analogWrite(RedPin, 100);
+  analogWrite(GreenPin, 0);
+  analogWrite(BluePin, 0);
+}
+
+void white () {
+  //set the LED pins to values that make white
+  analogWrite(RedPin, 255);
+  analogWrite(GreenPin, 255);
+  analogWrite(BluePin, 255);
+}
+
+void off () {
+  analogWrite(RedPin, 0);
+  analogWrite(GreenPin, 0);
+  analogWrite(BluePin, 0);
+}
