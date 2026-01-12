@@ -106,6 +106,8 @@ digitalWrite(lightFourPinThree, HIGH);
 delay(1500);
 }
 
+// TODO - EKANSH: CHANGE ALL FUNCTION VARIABLES TO THE PINS NEEDED FOR THE RGB LEDS
+
 void green () {
   //set the LED pins to values that make green
   analogWrite(RedPin, 0);
