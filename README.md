@@ -22,3 +22,6 @@ Defintions:
 - lightFourPinOne - Green For traffic light 4
 - lightFourPinTwo - Yellow For traffic light 4
 - lightFourPinThree - Red For traffic light 4
+
+**TinkerCad Link**
+https://www.tinkercad.com/things/je3YMRBF9o5/editel?returnTo=%2Fdashboard&sharecode=lMZtk5FnuZLV3Y5r7AqB7yYKiBPnMZOOr6BYXoivadE
