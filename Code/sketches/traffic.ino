@@ -7,11 +7,12 @@ const int lightTwoPinTwo = 12;
 const int lightTwoPinThree = 8;
 // one set of lights -- Above
 const int lightThreePinOne = 7; 
-const int lightThreePinTwo = 6;
-const int lightThreePinThree = 5;
-const int lightFourPinOne = 4; 
-const int lightFourPinTwo = 3;
+const int lightThreePinTwo = 4;
+const int lightThreePinThree = 2;
+const int lightFourPinOne = 7; 
+const int lightFourPinTwo = 4;
 const int lightFourPinThree = 2;
+//set 2 of traffic lights -- Above
 int photoresistorVal = 0;
 
 void setup() {
