@@ -1,10 +1,11 @@
 // INITIALIZE VARIBLES
 const int lightOnePinOne = 13;
 const int lightOnePinTwo = 12; 
-const int lightOnePinThree = 11;
-const int lightTwoPinOne = 10;
-const int lightTwoPinTwo = 9;
+const int lightOnePinThree = 8;
+const int lightTwoPinOne = 13;
+const int lightTwoPinTwo = 12;
 const int lightTwoPinThree = 8;
+// done till here
 const int lightThreePinOne = 7; 
 const int lightThreePinTwo = 6;
 const int lightThreePinThree = 5;
