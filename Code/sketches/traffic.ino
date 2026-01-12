@@ -5,7 +5,7 @@ const int lightOnePinThree = 8;
 const int lightTwoPinOne = 13;
 const int lightTwoPinTwo = 12;
 const int lightTwoPinThree = 8;
-// done till here
+// one set of pins
 const int lightThreePinOne = 7; 
 const int lightThreePinTwo = 6;
 const int lightThreePinThree = 5;
