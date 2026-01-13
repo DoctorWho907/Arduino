@@ -124,6 +124,8 @@ digitalWrite(lightFourPinTwo, LOW);
 digitalWrite(lightThreePinThree, HIGH);
 digitalWrite(lightFourPinThree, HIGH);
 delay(1500);
+
+// end of loop
 }
 
 // TODO - EKANSH: CHANGE ALL FUNCTION VARIABLES TO THE PINS NEEDED FOR THE RGB LEDS
