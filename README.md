@@ -1,7 +1,7 @@
 ****Defintions:**
 
-
-----------------------------NOTE: THIS FORMATTING WILL BE COMPLETELY CHANGED SOOM WHEN MERGING IS DONE-------------------------------------------------------
+**----FIX REQUIRED-------**
+**----------------------------NOTE: THIS FORMATTING WILL BE COMPLETELY CHANGED SOOM WHEN MERGING IS DONE-------------------------------------------------------**
 
 **Formatting Of Variables**
 - I’ve structered the code so it follows a general format of lightXPinY.
