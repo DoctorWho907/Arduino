@@ -111,19 +111,30 @@ digitalWrite(lightThreePinOne, HIGH);
 digitalWrite(lightFourPinOne, HIGH);
 delay(5000);
 // Turn lights yellow
-digitalWrite(lightThreePinOne, LOW);
-digitalWrite(lightFourPinOne, LOW);
-
+digitalWrite(lightThreePinOne, HIGH);
+digitalWrite(lightFourPinOne, HIGH);
+digitalWrite(lightOnePinTwo, HIGH);
+digitalWrite(lightTwoPinTwo, HIGH);
+digitalWrite(lightOnePinThree, LOW);
+digitalWrite(lightTwoPinThree, LOW);
+delay(1500);
+digitalWrite(lightOnePinTwo, LOW);
+digitalWrite(lightTwoPinTwo, LOW);
+digitalWrite(lightOnePinThree, LOW);
+digitalWrite(lightTwoPinThree, LOW);
 digitalWrite(lightThreePinTwo, HIGH);
 digitalWrite(lightFourPinTwo, HIGH);
+
+digitalWrite(lightOnePinOne, HIGH);
+digitalWrite(lightThreePinOne, LOW);
+digitalWrite(lightFourPinOne, LOW);
 delay(2500);
 // Red light
 digitalWrite(lightThreePinTwo, LOW);
 digitalWrite(lightFourPinTwo, LOW);
-
-digitalWrite(lightThreePinThree, HIGH);
-digitalWrite(lightFourPinThree, HIGH);
-delay(1500);
+  
+digitalWrite(lightThreePinOne, LOW);
+digitalWrite(lightFourPinOne, LOW);
 }
 
 // TODO - EKANSH: CHANGE ALL FUNCTION VARIABLES TO THE PINS NEEDED FOR THE RGB LEDS
