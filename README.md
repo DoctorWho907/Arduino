@@ -1,5 +1,7 @@
-Defintions:
+****Defintions:**
 
+
+----------------------------NOTE: THIS FORMATTING WILL BE COMPLETELY CHANGED SOOM WHEN MERGING IS DONE-------------------------------------------------------
 **Formatting**
 - I’ve structered the code so it follows a general format of lightXPinY.
 - X denotes which individual light out of four that the pin belongs to.
@@ -22,6 +24,7 @@ Defintions:
 - lightFourPinOne - Green For traffic light 4
 - lightFourPinTwo - Yellow For traffic light 4
 - lightFourPinThree - Red For traffic light 4
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 **TinkerCad Link**
 https://www.tinkercad.com/things/je3YMRBF9o5/editel?returnTo=%2Fdashboard&sharecode=lMZtk5FnuZLV3Y5r7AqB7yYKiBPnMZOOr6BYXoivadE
