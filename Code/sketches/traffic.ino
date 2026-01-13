@@ -72,6 +72,24 @@ digitalWrite(lightFourPinThree, HIGH);
 digitalWrite(lightOnePinOne, HIGH);
 digitalWrite(lightTwoPinOne, HIGH);
 delay(5000);
+
+// Turn Green Lights Off
+digitalWrite(lightThreePinThree, LOW);
+digitalWrite(lightFourPinThree, LOW);
+
+// Turn Lights Yellow
+digitalWrite(lightThreePinTwo, HIGH);
+digitalWrite(lightFourPinTwo, HIGH);
+delay(5000);
+
+//Turn Yellow Lights Off
+digitalWrite(lightThreePinTwo, LOW);
+digitalWrite(lightFourPinTwo, LOW);
+
+//Turn Red Lights On
+digitalWrite(lightThreePinOne, HIGH);
+digitalWrite(lightFourPinOne, HIGH);
+ 
 // Turn lights yellow
 digitalWrite(lightOnePinOne, LOW);
 digitalWrite(lightTwoPinOne, LOW);
@@ -109,7 +127,7 @@ delay(1500);
 }
 
 // TODO - EKANSH: CHANGE ALL FUNCTION VARIABLES TO THE PINS NEEDED FOR THE RGB LEDS
-
+/*
 void green () {
   //set the LED pins to values that make green
   analogWrite(RedPin, 0);
@@ -142,4 +160,5 @@ void off () {
   analogWrite(RedPin, 0);
   analogWrite(GreenPin, 0);
   analogWrite(BluePin, 0);
-}
+} 
+*/
