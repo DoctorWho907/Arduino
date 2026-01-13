@@ -2,7 +2,8 @@
 
 
 ----------------------------NOTE: THIS FORMATTING WILL BE COMPLETELY CHANGED SOOM WHEN MERGING IS DONE-------------------------------------------------------
-**Formatting**
+
+**Formatting Of Variables**
 - I’ve structered the code so it follows a general format of lightXPinY.
 - X denotes which individual light out of four that the pin belongs to.
 - Y denotes which light (red, green, yellow) out of the three that the pin belongs to.
