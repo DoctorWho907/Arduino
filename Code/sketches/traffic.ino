@@ -126,8 +126,6 @@ digitalWrite(lightThreePinTwo, HIGH);
 digitalWrite(lightFourPinTwo, HIGH);
 
 digitalWrite(lightOnePinOne, HIGH);
-digitalWrite(lightOnePinThree, LOW);
-digitalWrite(lightTwoPinThree, LOW);
 digitalWrite(lightThreePinOne, LOW);
 digitalWrite(lightFourPinOne, LOW);
 delay(2500);
