@@ -1,17 +1,11 @@
 // INITIALIZE VARIBLES
-const int lightOnePinOne = 13;
-const int lightOnePinTwo = 12; 
-const int lightOnePinThree = 8;
-const int lightTwoPinOne = 13;
-const int lightTwoPinTwo = 12;
-const int lightTwoPinThree = 8;
+const int lightSet1Green = 13;
+const int lightSet1Yellow = 12; 
+const int lightSet1Red = 8;
 // one set of lights -- Above
-const int lightThreePinOne = 7; 
-const int lightThreePinTwo = 4;
-const int lightThreePinThree = 2;
-const int lightFourPinOne = 7; 
-const int lightFourPinTwo = 4;
-const int lightFourPinThree = 2;
+const int lightSet2Green = 7; 
+const int lightSet2Yellow = 4;
+const int lightSet2Red = 2;
 //set 2 of traffic lights -- Above
 int photoresistorVal = 0;
 
@@ -31,18 +25,12 @@ void setup() {
   pinMode(1, OUTPUT);
   
   // Disable all LED's
-  digitalWrite(lightOnePinOne, LOW);
-  digitalWrite(lightOnePinTwo, LOW);
-  digitalWrite(lightOnePinThree, LOW);
-  digitalWrite(lightTwoPinOne, LOW);
-  digitalWrite(lightTwoPinTwo, LOW);
-  digitalWrite(lightTwoPinThree, LOW);
-  digitalWrite(lightThreePinOne, LOW);
-  digitalWrite(lightThreePinTwo, LOW);
-  digitalWrite(lightThreePinThree, LOW);
-  digitalWrite(lightFourPinOne, LOW);
-  digitalWrite(lightFourPinTwo, LOW);
-  digitalWrite(lightFourPinThree, LOW);
+  digitalWrite(lightSet1Green, LOW);
+  digitalWrite(lightSet1Yellow, LOW);
+  digitalWrite(lightSet1Red, LOW);
+  digitalWrite(lightSet2Green, LOW);
+  digitalWrite(lightSet2Yellow, LOW);
+  digitalWrite(lightSet2Red, LOW);
   Serial.begin(9600);
 }
 
@@ -65,76 +53,57 @@ if (photoresistorVal < 500){
 delay(100);
 
 // Turn opposite lights RED to start the cycle
-digitalWrite(lightThreePinThree, HIGH);
-digitalWrite(lightFourPinThree, HIGH);
+digitalWrite(lightSet2Red, HIGH);
 
 // Start cycle - Green lights
-digitalWrite(lightOnePinOne, HIGH);
-digitalWrite(lightTwoPinOne, HIGH);
+digitalWrite(lightSet1Green, HIGH);
 delay(5000);
 
 // Turn Green Lights Off
-digitalWrite(lightThreePinThree, LOW);
-digitalWrite(lightFourPinThree, LOW);
+digitalWrite(lightSet2Red, LOW);
 
 // Turn Lights Yellow
-digitalWrite(lightThreePinTwo, HIGH);
-digitalWrite(lightFourPinTwo, HIGH);
+digitalWrite(lightSet2Yellow, HIGH);
 delay(5000);
 
 //Turn Yellow Lights Off
-digitalWrite(lightThreePinTwo, LOW);
-digitalWrite(lightFourPinTwo, LOW);
+digitalWrite(lightSet2Yellow, LOW);
 
 //Turn Red Lights On
-digitalWrite(lightThreePinOne, HIGH);
-digitalWrite(lightFourPinOne, HIGH);
+digitalWrite(lightSet2Green, HIGH);
  
 // Turn lights yellow
-digitalWrite(lightOnePinOne, LOW);
-digitalWrite(lightTwoPinOne, LOW);
+digitalWrite(lightSet1Green, LOW);
 
-digitalWrite(lightOnePinTwo, HIGH);
-digitalWrite(lightTwoPinTwo, HIGH);
+digitalWrite(lightSet1Yellow, HIGH);
 delay(2500);
 // Red light
-digitalWrite(lightOnePinTwo, LOW);
-digitalWrite(lightTwoPinTwo, LOW);
+digitalWrite(lightSet1Yellow, LOW);
 
-digitalWrite(lightOnePinThree, HIGH);
-digitalWrite(lightTwoPinThree, HIGH);
+digitalWrite(lightSet1Red, HIGH);
 
 delay(1500);
 
 // Start cycle - Green lights (Opposite Lights)
-digitalWrite(lightThreePinOne, HIGH);
-digitalWrite(lightFourPinOne, HIGH);
+digitalWrite(lightSet2Green, HIGH);
+
 delay(5000);
 // Turn lights yellow
-digitalWrite(lightThreePinOne, HIGH);
-digitalWrite(lightFourPinOne, HIGH);
-digitalWrite(lightOnePinTwo, HIGH);
-digitalWrite(lightTwoPinTwo, HIGH);
-digitalWrite(lightOnePinThree, LOW);
-digitalWrite(lightTwoPinThree, LOW);
+digitalWrite(lightSet2Green, HIGH);
+digitalWrite(lightSet1Yellow, HIGH);
+digitalWrite(lightSet1Red, LOW);
 delay(1500);
-digitalWrite(lightOnePinTwo, LOW);
-digitalWrite(lightTwoPinTwo, LOW);
-digitalWrite(lightOnePinThree, LOW);
-digitalWrite(lightTwoPinThree, LOW);
-digitalWrite(lightThreePinTwo, HIGH);
-digitalWrite(lightFourPinTwo, HIGH);
+digitalWrite(lightSet1Yellow, LOW);
+digitalWrite(lightSet1Red, LOW);
+digitalWrite(lightSet2Yellow, HIGH);
 
-digitalWrite(lightOnePinOne, HIGH);
-digitalWrite(lightThreePinOne, LOW);
-digitalWrite(lightFourPinOne, LOW);
+digitalWrite(lightSet1Green, HIGH);
+digitalWrite(lightSet2Green, LOW);
 delay(2500);
 // Red light
-digitalWrite(lightThreePinTwo, LOW);
-digitalWrite(lightFourPinTwo, LOW);
+digitalWrite(lightSet2Yellow, LOW);
   
-digitalWrite(lightThreePinOne, LOW);
-digitalWrite(lightFourPinOne, LOW);
+digitalWrite(lightSet2Green, LOW);
 }
 
 // TODO - EKANSH: CHANGE ALL FUNCTION VARIABLES TO THE PINS NEEDED FOR THE RGB LEDS
@@ -173,3 +142,4 @@ void off () {
   analogWrite(BluePin, 0);
 } 
 */
+
