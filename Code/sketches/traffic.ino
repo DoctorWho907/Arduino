@@ -22,7 +22,7 @@ void setup() {
   pinMode(4, OUTPUT);
   pinMode(3, OUTPUT);
   pinMode(2, OUTPUT);
-  pinMode(1, OUTPUT);
+  pinMode(A1, OUTPUT);
   
   // Disable all LED's
   digitalWrite(lightSet1Green, LOW);
@@ -41,24 +41,15 @@ void loop() {
 
 // Traffic Light Cycle -------------------------------------------------------
 
-photoresistorVal = analogRead(A0);
-Serial.println(photoresistorVal);
-
-if (photoresistorVal < 500){
-    digitalWrite(1, HIGH);
-  } else {
-    digitalWrite(1, LOW);
-  }
+digitalWrite(A1, HIGH);
 
 delay(100);
 
 // Turn opposite lights RED to start the cycle
 digitalWrite(lightSet2Red, HIGH);
-
 // Start cycle - Green lights
 digitalWrite(lightSet1Green, HIGH);
 delay(5000);
-
 // Turn Green Lights Off
 digitalWrite(lightSet2Red, LOW);
 
@@ -77,6 +68,7 @@ digitalWrite(lightSet1Green, LOW);
 
 digitalWrite(lightSet1Yellow, HIGH);
 delay(2500);
+
 // Red light
 digitalWrite(lightSet1Yellow, LOW);
 
@@ -88,11 +80,13 @@ delay(1500);
 digitalWrite(lightSet2Green, HIGH);
 
 delay(5000);
+
 // Turn lights yellow
 digitalWrite(lightSet2Green, HIGH);
 digitalWrite(lightSet1Yellow, HIGH);
 digitalWrite(lightSet1Red, LOW);
 delay(1500);
+
 digitalWrite(lightSet1Yellow, LOW);
 digitalWrite(lightSet1Red, LOW);
 digitalWrite(lightSet2Yellow, HIGH);
@@ -100,11 +94,13 @@ digitalWrite(lightSet2Yellow, HIGH);
 digitalWrite(lightSet1Green, HIGH);
 digitalWrite(lightSet2Green, LOW);
 delay(2500);
+
 // Red light
 digitalWrite(lightSet2Yellow, LOW);
   
 digitalWrite(lightSet2Green, LOW);
 }
+
 
 // TODO - EKANSH: CHANGE ALL FUNCTION VARIABLES TO THE PINS NEEDED FOR THE RGB LEDS
 /*
