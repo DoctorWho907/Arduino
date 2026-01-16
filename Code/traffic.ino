@@ -22,6 +22,7 @@ void setup() {
   pinMode(4, OUTPUT);
   pinMode(3, OUTPUT);
   pinMode(2, OUTPUT);
+  pinMode(A0, INPUT);
   pinMode(A1, OUTPUT);
   
   // Disable all LED's
@@ -31,32 +32,33 @@ void setup() {
   digitalWrite(lightSet2Green, LOW);
   digitalWrite(lightSet2Yellow, LOW);
   digitalWrite(lightSet2Red, LOW);
+  //setup photoresistor
   Serial.begin(9600);
+  digitalWrite(A0, HIGH);
 }
 
 void loop() {
-// Pin ONE on all is Green
-// Pin TWO on all is Yellow
-// Pin THREE on all is Red
-
 // Traffic Light Cycle -------------------------------------------------------
-
-digitalWrite(A1, HIGH);
-
+read_photoresistor();
+street_lights();
 delay(100);
-
+read_photoresistor();
+street_lights();
 // Turn opposite lights RED to start the cycle
 digitalWrite(lightSet2Red, HIGH);
 // Start cycle - Green lights
 digitalWrite(lightSet1Green, HIGH);
 delay(5000);
+read_photoresistor();
+street_lights();
 // Turn Green Lights Off
 digitalWrite(lightSet2Red, LOW);
 
 // Turn Lights Yellow
 digitalWrite(lightSet2Yellow, HIGH);
 delay(5000);
-
+read_photoresistor();
+street_lights();
 //Turn Yellow Lights Off
 digitalWrite(lightSet2Yellow, LOW);
 
@@ -68,25 +70,29 @@ digitalWrite(lightSet1Green, LOW);
 
 digitalWrite(lightSet1Yellow, HIGH);
 delay(2500);
-
+read_photoresistor();
+street_lights();
 // Red light
 digitalWrite(lightSet1Yellow, LOW);
 
 digitalWrite(lightSet1Red, HIGH);
 
 delay(1500);
-
+read_photoresistor();
+street_lights();
 // Start cycle - Green lights (Opposite Lights)
 digitalWrite(lightSet2Green, HIGH);
 
 delay(5000);
-
+read_photoresistor();
+street_lights();
 // Turn lights yellow
 digitalWrite(lightSet2Green, HIGH);
 digitalWrite(lightSet1Yellow, HIGH);
 digitalWrite(lightSet1Red, LOW);
 delay(1500);
-
+read_photoresistor();
+street_lights();
 digitalWrite(lightSet1Yellow, LOW);
 digitalWrite(lightSet1Red, LOW);
 digitalWrite(lightSet2Yellow, HIGH);
@@ -94,14 +100,26 @@ digitalWrite(lightSet2Yellow, HIGH);
 digitalWrite(lightSet1Green, HIGH);
 digitalWrite(lightSet2Green, LOW);
 delay(2500);
-
+read_photoresistor();
+street_lights();
 // Red light
 digitalWrite(lightSet2Yellow, LOW);
   
 digitalWrite(lightSet2Green, LOW);
 }
 
-
+void read_photoresistor(){
+photoresistorVal = analogRead(A0);
+Serial.print(photoresistorVal);
+}
+void street_lights(){
+if (photoresistorVal>500){
+digitalWrite(A1, HIGH);
+}
+else{
+digitalWrite(A1,LOW);
+}
+}
 // TODO - EKANSH: CHANGE ALL FUNCTION VARIABLES TO THE PINS NEEDED FOR THE RGB LEDS
 /*
 void green () {
