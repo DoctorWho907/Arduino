@@ -1,17 +1,17 @@
 **Defintions:** <br>
 <br>
 **Formatting of Variables** <br>
-&emsp;	**Traffic Lights** <br>
-&emsp;	◈  Variable are structured so that the variable for the traffic lights are in 2 sets so 6 pins are used for them <br>
-&emsp;&emsp;		❖ If they were not merged We would have to use 12 pins total for 4 stes compared  to two sets <br>
-&emsp;	◈ trafficLightSet[x]Green --> The green Led for 1 set of traffic lights for same direction <br>
-&emsp;	◈ trafficLightSet[x]Yellow --> The yellow Led for 1 set of traffic lights for same direction <br>
-&emsp;	◈ trafficLightSet[x]Red --> The red Led for 1 set of traffic lights for same direction <br>
+&emsp;&emsp;&emsp;&emsp;	**Traffic Lights** <br>
+&emsp;&emsp;&emsp;&emsp;	◈  Variable are structured so that the variable for the traffic lights are in 2 sets so 6 pins are used for them <br>
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;		❖ If they were not merged We would have to use 12 pins total for 4 stes compared  to two sets <br>
+&emsp;&emsp;&emsp;&emsp;	◈ trafficLightSet[x]Green --> The green Led for 1 set of traffic lights for same direction <br>
+&emsp;&emsp;&emsp;&emsp;	◈ trafficLightSet[x]Yellow --> The yellow Led for 1 set of traffic lights for same direction <br>
+&emsp;&emsp;&emsp;&emsp;	◈ trafficLightSet[x]Red --> The red Led for 1 set of traffic lights for same direction <br>
 <br>	
-&emsp;	**RGB LEDs** <br>
+&emsp;&emsp;&emsp;&emsp;	**RGB LEDs** <br>
 <br>	
-&emsp;	**Other** <br>
-&emsp;	◈ photoresistorVal --> used to store the current value the photoresistor is giving <br>
+&emsp;&emsp;&emsp;&emsp;	**Other** <br>
+&emsp;&emsp;&emsp;&emsp;	◈ photoresistorVal --> used to store the current value the photoresistor is giving <br>
 --------------------------------------------------------------------------------------------------------------------------------------------------------------<br>
 <br>
 **TinkerCad Link**<br>
