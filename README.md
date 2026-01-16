@@ -1,17 +1,17 @@
 **Defintions:** <br>
 <br>
 **Formatting of Variables** <br>
-	**Traffic Lights** <br>
-	◈  Variable are structured so that the variable for the traffic lights are in 2 sets so 6 pins are used for them <br>
-		❖ If they were not merged We would have to use 12 pins total for 4 stes compared  to two sets <br>
-	◈ trafficLightSet[x]Green --> The green Led for 1 set of traffic lights for same direction <br>
-	◈ trafficLightSet[x]Yellow --> The yellow Led for 1 set of traffic lights for same direction <br>
-	◈ trafficLightSet[x]Red --> The red Led for 1 set of traffic lights for same direction <br>
+&nbsp;	**Traffic Lights** <br>
+&nbsp;	◈  Variable are structured so that the variable for the traffic lights are in 2 sets so 6 pins are used for them <br>
+&nbsp;		❖ If they were not merged We would have to use 12 pins total for 4 stes compared  to two sets <br>
+&nbsp;	◈ trafficLightSet[x]Green --> The green Led for 1 set of traffic lights for same direction <br>
+&nbsp;	◈ trafficLightSet[x]Yellow --> The yellow Led for 1 set of traffic lights for same direction <br>
+&nbsp;	◈ trafficLightSet[x]Red --> The red Led for 1 set of traffic lights for same direction <br>
 <br>	
-	**RGB LEDs** <br>
+&nbsp;	**RGB LEDs** <br>
 <br>	
-	**Other** <br>
-	◈ photoresistorVal --> used to store the current value the photoresistor is giving <br>
+&nbsp;	**Other** <br>
+&nbsp;	◈ photoresistorVal --> used to store the current value the photoresistor is giving <br>
 --------------------------------------------------------------------------------------------------------------------------------------------------------------<br>
 <br>
 **TinkerCad Link**<br>
