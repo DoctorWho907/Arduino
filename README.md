@@ -1,4 +1,4 @@
-Defintions: <br>
+**Defintions:** <br>
 <br>
 **Formatting of Variables** <br>
 	**Traffic Lights** <br>
