@@ -27,16 +27,16 @@
 <br>
 <br>
 **Function Details**
-&emsp;&emsp;&emsp; ◈  Traffic light functions control LEDs used for the traffic lights
-&emsp;&emsp;&emsp; ◈  Pedestrian crossing functions control RGB LEDs used for the pedestrian crossing lights
-&emsp;&emsp;&emsp; ◈  street_lights function takes reading from photoresistor and turns street lights on/off accordingly
+&emsp;&emsp;&emsp; ◈  Traffic light functions control LEDs used for the traffic lights<br>
+&emsp;&emsp;&emsp; ◈  Pedestrian crossing functions control RGB LEDs used for the pedestrian crossing lights<br>
+&emsp;&emsp;&emsp; ◈  street_lights function takes reading from photoresistor and turns street lights on/off accordingly<br>
 <br>
 <br>
 **Pins**<br>
-&emsp;&emsp;&emsp; ◈  2,4,7,8,12,13 are used for the Traffic Lights
-&emsp;&emsp;&emsp; ◈  3,5,6,9,10,11 are used for Pedestrian Crossings
-&emsp;&emsp;&emsp; ◈  A0 is used for photoresistor
-&emsp;&emsp;&emsp; ◈  A1 is used for street lights
+&emsp;&emsp;&emsp; ◈  2,4,7,8,12,13 are used for the Traffic Lights<br>
+&emsp;&emsp;&emsp; ◈  3,5,6,9,10,11 are used for Pedestrian Crossings<br>
+&emsp;&emsp;&emsp; ◈  A0 is used for photoresistor<br>
+&emsp;&emsp;&emsp; ◈  A1 is used for street lights<br>
 <br>
 <br>
 --------------------------------------------------------------------------------------------------------------------------------------------------------------<br>
