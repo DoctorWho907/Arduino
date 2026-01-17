@@ -26,7 +26,7 @@
 &emsp;&emsp;&emsp; ◈  Functions for the Pedestrian Crossing are formatted as [rgb setting(Red,Green,Blue,White,Off)]_[light set number(one,two)]<br>
 <br>
 <br>
-**Function Details**
+**Function Details**<br>
 &emsp;&emsp;&emsp; ◈  Traffic light functions control LEDs used for the traffic lights<br>
 &emsp;&emsp;&emsp; ◈  Pedestrian crossing functions control RGB LEDs used for the pedestrian crossing lights<br>
 &emsp;&emsp;&emsp; ◈  street_lights function takes reading from photoresistor and turns street lights on/off accordingly<br>
