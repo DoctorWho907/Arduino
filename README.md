@@ -41,9 +41,9 @@
 <br>
 --------------------------------------------------------------------------------------------------------------------------------------------------------------<br>
 <br>
-**TinkerCad Link**<br>
+TinkerCad Link<br>
 https://www.tinkercad.com/things/bmuCUyatw2G/editel?returnTo=%2Fdashboard&sharecode=YWGUWs8kigB88xLfP-0MpaSnDle2bllIe3Q_HHTSEtQ <br>
 
 <br>
-**Canva Link**<br>
+Canva Link<br>
 https://www.canva.com/design/DAG9qb2ZqQc/QB-9GJbamba1-MdPYIznzw/edit?utm_content=DAG9qb2ZqQc&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
