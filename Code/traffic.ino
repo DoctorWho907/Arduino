@@ -22,18 +22,26 @@ const int crossingSet2Red = 9;
 int photoresistorVal = 0;
 
 void setup() {
+  // Traffic Light Set 1
   pinMode(13, OUTPUT);
   pinMode(12, OUTPUT);
-  pinMode(11, OUTPUT);
-  pinMode(10, OUTPUT);
-  pinMode(9, OUTPUT);
   pinMode(8, OUTPUT);
-  pinMode(7, OUTPUT);
-  pinMode(6, OUTPUT);
-  pinMode(5, OUTPUT);
-  pinMode(4, OUTPUT);
-  pinMode(3, OUTPUT);
-  pinMode(2, OUTPUT);
+  // Ends
+  // Pedestrian Set 2
+  pinMode(crossingSet2Blue, OUTPUT);
+  pinMode(crossingSet2Green, OUTPUT);
+  pinMode(crossingSet2Red, OUTPUT);
+  // Ends
+  // Pedestrian Set 1
+  pinMode(crossingSet1Blue, OUTPUT);
+  pinMode(crossingSet1Green, OUTPUT);
+  pinMode(crossingSet1Red, OUTPUT);
+  // Ends
+  // Traffic Light Set 2
+  pinMode(lightSet2Red, OUTPUT);
+  pinMode(lightSet2Yellow, OUTPUT);
+  pinMode(lightSet2Green, OUTPUT);
+  // Ends
   pinMode(A0, INPUT);
   pinMode(A1, OUTPUT);
   
@@ -59,7 +67,7 @@ delay(100);
 street_lights();
 
 //set 2 red and set 1 Yellow
-yr();
+gr();
 yellow_one();
 red_two();
 delay(2500);
@@ -67,7 +75,7 @@ delay(2500);
 //set 1 green
 street_lights();
 gr();
-white_one();
+green_one();
 delay(5000);
 street_lights();
 
@@ -77,7 +85,7 @@ flashing_one();
 street_lights();
 
 //set 1 red and set 2 yellow
-ry();
+rg();
 red_one();
 yellow_two();
 delay(2500);
@@ -85,7 +93,7 @@ street_lights();
 
 // set 2 green
 rg();
-white_two();
+green_two();
 delay(5000);
 street_lights();
 
@@ -130,9 +138,9 @@ void red_one () {
 
 void white_one () {
   //set the LED pins to values that make white
-  analogWrite(crossingSet1Red, 255);
-  analogWrite(crossingSet1Green, 255);
-  analogWrite(crossingSet1Blue, 255);
+  analogWrite(crossingSet1Red, 100);
+  analogWrite(crossingSet1Green, 100);
+  analogWrite(crossingSet1Blue, 100);
 }
 
 void flashing_one() {
@@ -185,9 +193,9 @@ void flashing_two() {
 }
 void white_two () {
   //set the LED pins to values that make white
-  analogWrite(crossingSet2Red, 255);
-  analogWrite(crossingSet2Green, 255);
-  analogWrite(crossingSet2Blue, 255);
+  analogWrite(crossingSet2Red,100);
+  analogWrite(crossingSet2Green, 100);
+  analogWrite(crossingSet2Blue, 100);
 }
 
 void off_two() {
