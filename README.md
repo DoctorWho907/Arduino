@@ -47,3 +47,7 @@ https://www.tinkercad.com/things/bmuCUyatw2G/editel?returnTo=%2Fdashboard&sharec
 <br>
 Canva Link<br>
 https://www.canva.com/design/DAG9qb2ZqQc/QB-9GJbamba1-MdPYIznzw/edit?utm_content=DAG9qb2ZqQc&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
+
+<br>
+Video Link<br>
+https://drive.google.com/file/d/1TxuEZHElCryrzH8KS_vCFNZrKkJv8mQq/view?usp=sharing
