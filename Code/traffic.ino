@@ -131,7 +131,7 @@ void yellow_one () {
 
 void red_one () {
   //set the LED pins to values that make red
-    analogWrite(crossingSet1Red, 100);
+  analogWrite(crossingSet1Red, 100);
   analogWrite(crossingSet1Green, 0);
   analogWrite(crossingSet1Blue, 0);
 }
@@ -206,37 +206,37 @@ void off_two() {
 
 //lights
 void yr(){
-digitalWrite(lightSet2Yellow, LOW);
-digitalWrite(lightSet2Green, LOW);
-digitalWrite(lightSet1Red, LOW);
-digitalWrite(lightSet2Red, HIGH);
-digitalWrite(lightSet1Yellow, HIGH);
-digitalWrite(lightSet1Green, LOW);
+  digitalWrite(lightSet2Yellow, LOW);
+  digitalWrite(lightSet2Green, LOW);
+  digitalWrite(lightSet1Red, LOW);
+  digitalWrite(lightSet2Red, HIGH);
+  digitalWrite(lightSet1Yellow, HIGH);
+  digitalWrite(lightSet1Green, LOW);
 }
 
 void gr(){
-digitalWrite(lightSet2Yellow, LOW);
-digitalWrite(lightSet2Green, LOW);
-digitalWrite(lightSet1Red, LOW);
-digitalWrite(lightSet2Red, HIGH);
-digitalWrite(lightSet1Yellow, LOW);
-digitalWrite(lightSet1Green, HIGH);
+  digitalWrite(lightSet2Yellow, LOW);
+  digitalWrite(lightSet2Green, LOW);
+  digitalWrite(lightSet1Red, LOW);
+  digitalWrite(lightSet2Red, HIGH);
+  digitalWrite(lightSet1Yellow, LOW);
+  digitalWrite(lightSet1Green, HIGH);
 }
 
 void ry(){
-digitalWrite(lightSet2Yellow, HIGH);
-digitalWrite(lightSet2Green, LOW);
-digitalWrite(lightSet1Red, HIGH);
-digitalWrite(lightSet2Red, LOW);
-digitalWrite(lightSet1Yellow, LOW);
-digitalWrite(lightSet1Green, LOW);
+  digitalWrite(lightSet2Yellow, HIGH);
+  digitalWrite(lightSet2Green, LOW);
+  digitalWrite(lightSet1Red, HIGH);
+  digitalWrite(lightSet2Red, LOW);
+  digitalWrite(lightSet1Yellow, LOW);
+  digitalWrite(lightSet1Green, LOW);
 }
 
 void rg(){
-digitalWrite(lightSet2Yellow, LOW);
-digitalWrite(lightSet2Green, HIGH);
-digitalWrite(lightSet1Red, HIGH);
-digitalWrite(lightSet2Red, LOW);
-digitalWrite(lightSet1Yellow, LOW);
-digitalWrite(lightSet1Green, LOW);
+  digitalWrite(lightSet2Yellow, LOW);
+  digitalWrite(lightSet2Green, HIGH);
+  digitalWrite(lightSet1Red, HIGH);
+  digitalWrite(lightSet2Red, LOW);
+  digitalWrite(lightSet1Yellow, LOW);
+  digitalWrite(lightSet1Green, LOW);
 }
